@@ -26,7 +26,7 @@
                 <nav class="navigation">
                     <ul class="navigation-list list">
                         <li class="navigation-item">
-                            <a class="link-st" href="./index.html">Студия</a>
+                            <a class="link-st current" href="./index.html">Студия</a>
                         </li>
                         <li class="navigation-item">
                             <a class="link navigation-link" href="./portfolio.html"Портфолио>Портфолио</a>
@@ -73,7 +73,19 @@
                     
                 <div class="container">
                     <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button class="btn" type="button">Заказать услугу</button>
+                    <button class="btn" type="button"data-modal-open>Заказать услугу</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal-wrapper">
+                            <button class="modal-btn" data-modal-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="11" height="11">
+                                
+                                <path
+                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                                </svg>
+                             </button>
+                            <form class="modal-form"></form>
+                        </div>
+                        
+                    </div>
                 </div>
                 
             </section>
@@ -135,9 +147,20 @@
                     <h2 class="img-title">Чем мы занимаемся</h2>
                     <ul class="img-b">
 
-                        <li class="img-a"><img src="./img/box 1.jpg" alt="ноутбук" width="370" height="294"></li>
-                        <li class="img-a"><img src="./img/box 2.jpg" alt="ноутбук" width="370" height="294"></li>
-                        <li class="img-a"><img src="./img/box 3.jpg" alt="планшет" width="370" height="294"></li>
+                        <li class="img-a">
+                            <img src="./img/box 1.jpg" alt="ноутбук" width="370" height="294">
+                            <p class="img-text">Десктопные приложения</p>
+                            
+                        
+                        </li>
+                        <li class="img-a">
+                            <img src="./img/box 2.jpg" alt="ноутбук" width="370" height="294">
+                            <p class="img-text">Мобильные приложения</p>
+                        </li>
+                        <li class="img-a">
+                            <img src="./img/box 3.jpg" alt="планшет" width="370" height="294">
+                            <p class="img-text">Дизайнерские решения</p>
+                        </li>
 
                     
                     </ul>
@@ -462,7 +485,7 @@
         </footer>
 
         
-       
+       <script src="./js/modal.js"></script>
 
     </body>
 
