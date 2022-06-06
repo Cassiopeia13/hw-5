@@ -50,7 +50,9 @@ li{
     padding: 0;
 }
 
-
+div{
+    display: block;
+}
 
 .logo{
     text-decoration: none;
@@ -426,7 +428,7 @@ li{
 }
 
 .backdrop.is-hidden .modal-wrapper{
-    transform: translate(-50% -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
     
 }
